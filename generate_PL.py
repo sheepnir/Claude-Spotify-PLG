@@ -18,7 +18,7 @@ def get_ai_response(prompt, api_key):
 
     message = client.messages.create(
         model="claude-3-5-sonnet-20240620",
-        max_tokens=1000,
+        max_tokens=4000,
         temperature=0.7,
         system="You are a music expert with extensive knowledge of songs across various genres and eras. Given a prompt, generate a list of 100 song suggestions for a Spotify playlist. Each suggestion should be in the format 'Artist - Song Title'. Aim for a diverse mix of songs that fit the theme or mood of the prompt.",
         messages=[
